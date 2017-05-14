@@ -1,18 +1,27 @@
-var span = $('span');
-span.css('color', 'blue');
-span.each(function(ind, elem) {
-    if (ind % 2 === 0) {
-        $(elem).css('color', 'grey');
-    }
-});
+function Phone(brand, color, price) {
+    this.brand = brand;
+    this.color = color;
+    this.price = price;
+}
 
-var p = $('p');
-p.each(function(ind, elem) {
-    var btn = '<button class="btn" data-tmp="' + ind + '"> klik klik </button>';
-    $(elem).append(btn);
-});
+Phone.prototype.printInfo = function() {
+    console.log('Phone brand: ' + this.brand + ', color: ' + this.color + ', price: ' + this.price);
+};
 
+Phone.prototype.getPrice = function() {
+    return this.price;
+};
 
-$('button').click(function() {
-    alert($(this).attr('data-tmp'));
-});
+Phone.prototype.getColor = function() {
+    return this.color;
+};
+
+Phone.prototype.getBrand = function() {
+    return this.brand;
+};
+
+var samsung = new Phone('Samsung', 'blue', 2400);
+var apple = new Phone('Apple', 'white', 3400);
+var applePrice = apple.getPrice();
+
+samsung.printInfo();

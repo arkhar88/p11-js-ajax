@@ -2,6 +2,7 @@
 @import url( 'https://fonts.googleapis.com/css?family=Anton');
 
 body {
+    font-family: 'Anton', cursive;
     margin-top: 100px;
     text-align: center;
 }
@@ -12,6 +13,7 @@ button {
     text-decoration: none;
     color: white;
     padding: 15px 30px;
+    margin-top: 150px;
     background-color: red;
     font-size: 50px;
     letter-spacing: 2px;
@@ -21,9 +23,16 @@ button:hover {
     background-color: blue;
 }
 
-p {
-    font-family: 'Anton', cursive;
-    margin: 40px 200px;
+a {
+    display: block;
     letter-spacing: 2px;
     font-size: 40px;
+    margin-top: 30px;
+}
+
+.box {
+    letter-spacing: 1px;
+    color: red;
+    margin: 40px 200px;
+    font-size: 35px;
 }

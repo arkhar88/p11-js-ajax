@@ -5,34 +5,9 @@ body {
     font-family: 'Anton', cursive;
     margin-top: 100px;
     text-align: center;
-}
-
-button {
-    font-family: 'Anton', cursive;
-    border: none;
-    text-decoration: none;
-    color: white;
-    padding: 15px 30px;
-    margin-top: 150px;
-    background-color: red;
-    font-size: 50px;
     letter-spacing: 2px;
 }
 
-button:hover {
-    background-color: blue;
-}
-
-a {
-    display: block;
-    letter-spacing: 2px;
-    font-size: 40px;
-    margin-top: 30px;
-}
-
-.box {
-    letter-spacing: 1px;
-    color: red;
-    margin: 40px 200px;
-    font-size: 35px;
+ul {
+    list-style: none;
 }
